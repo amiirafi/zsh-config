@@ -21,6 +21,10 @@ zinit light zsh-users/zsh-autosuggestions
 # Load completions
 autoload -Uz compinit && compinit
 
+# Keybindings
+bindkey '^[[A' history-search-backward
+bindkey '^[[B' history-search-forward
+
 # History
 HISTSIZE=5000
 HISTFILE=~/.zsh_history
